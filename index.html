@@ -7,11 +7,11 @@
 </head>
 <body>    
     <div class="tabs">
-        <button class="tab-btn " data-tab="US1">US1</button>
-        <button class="tab-btn active" data-tab="US3">US3</button>
+        <button class="tab-btn active" data-tab="US1">US1</button>
+        <button class="tab-btn" data-tab="US3">US3</button>
         <button class="tab-btn" data-tab="US5">US5</button>
     </div>
-    <div class="tab-content" id="US1">
+    <div class="tab-content active" id="US1">
         <div class="window"> 
             <div class="top-panel">
                 <p id="title">Login to Bug Tracker</p>
@@ -51,7 +51,7 @@
             </div>            
         </div>
     </div>
-    <div class="tab-content active" id="US3">
+    <div class="tab-content" id="US3">
         <div class="window"> 
             <div class="top-panel">
                 <p id="title">Create Report</p>
@@ -71,16 +71,103 @@
                         <div id="left-column">
                             <div class="dropdownList-group">
                                 <p class="obligatory-fild">*Project</p>
-                                <select id="bgcolor">
+                                <select class="dropdownList">
                                     <option value="default" selected></option>
                                     <option value="Project1">Project1</option>
                                     <option value="Project2">Project2</option>
                                 </select>
                             </div>
+                            <div class="dropdownList-group">
+                                <p class="obligatory-fild">*Issue Type</p>
+                                <select class="dropdownList">
+                                    <option value="default" selected></option>
+                                    <option value="Bug">Bug</option>
+                                    <option value="Task">Task</option>
+                                </select>
+                            </div>
+                            <div class="dropdownList-group">
+                                <p class="obligatory-fild">*Priority</p>
+                                <select class="dropdownList">
+                                    <option value="default" selected></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>                        
+                            <div class="dropdownList-group">
+                                <p class="obligatory-fild">*Assignee</p>
+                                <select class="dropdownList">
+                                    <option value="default" selected></option>
+                                    <option value="Tom">Tom</option>
+                                    <option value="Ben">Ben</option>
+                                    <option value="Nika">Nika</option>
+                                </select>
+                            </div>
+                            <div class="dropdownList-group">
+                                <p class="obligatory-fild">*Severity</p>
+                                <select class="dropdownList">
+                                    <option value="default" selected></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="dropdownList-group">
+                                <p class="obligatory-fild">*Environment</p>
+                                <select class="dropdownList">
+                                    <option value="default" selected></option>
+                                    <option value="Environment1">Environment1</option>
+                                    <option value="Environment2">Environment2</option>
+                                </select>
+                            </div>
+                            <div class="input-US3">
+                                <p class="label-US3">Due Date</p>
+                                <input type="date" class="dropdownList">
+                            </div>
+                            <div class="input-US3">
+                                <p class="label-US3">Affect Version</p>
+                                <input type="text" class="dropdownList">
+                            </div>
+                            <div class="input-US3">
+                                <p class="label-US3">Fix Version</p>
+                                <input type="text" class="dropdownList">
+                            </div>
+                            <div class="input-US3">
+                                <p class="label-US3">Reporter</p>
+                                <input type="text" class="dropdownList" value="Admin" readonly>
+                            </div>
+                            <div class="input-US3">
+                                <p class="label-US3">Status</p>
+                                <input type="text" class="dropdownList" value="New" readonly>
+                            </div>
+                        </div>
+                        <div id="right-column">
+                            <div id="description-group">
+                            <p class="label-US3" id="desc-label">Description</p>
+                            <input type="text" id="description">
+                            </div>
+                            <div class="footer-btns-US3">
+                                <button class="btn-US3">Save Report</button>
+                                <button class="btn-US3">Close</button>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-content-US3" id="Comments">
-
+                        <div class="part" id="left-part">
+                            <div id="comment-group">
+                                <p class="label-US3" id="desc-label">Comment</p>
+                                <input type="text" id="comment-input">
+                            </div>
+                            <button class="btn-US3">Add Comment</button>
+                        </div>
+                        <div class="part">
+                            <p class="label-US3" id="desc-label">All Comments</p>
+                            <input type="text" id="all-comments" readonly>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,10 +176,26 @@
     <div class="tab-content" id="US5">
         <div class="window"> 
             <div class="top-panel">
-                <p id="title">Login to Bug Tracker</p>
+                <p id="title">Create Account</p>
                 <button class="close">&#x2716;</button>
             </div>
-            <div class="content">
+            <div class="content" id="US5-content">
+                <div class="US5-part">
+                    <p class="obligatory-fild">*User Name:</p>
+                    <input type="text" class="US5-field">
+                </div>
+                <div class="US5-part">
+                    <p class="obligatory-fild">*Password:</p>
+                    <input type="text" class="US5-field">
+                </div>
+                <div class="US5-part">
+                    <p class="obligatory-fild">*Confirm Password:</p>
+                    <input type="text" class="US5-field">
+                </div>
+                <div class="footer-btns-US3">
+                    <button class="btn-US3">Sign Up</button>
+                    <button class="btn-US3">Cancel</button>
+                </div>
             </div>
         </div>
     </div>

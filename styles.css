@@ -191,7 +191,7 @@ body{
     border: rgb(146, 145, 145);
     border-style: solid;
     border-width: 1px;
-    
+    border-radius: 10px; 
 }
 
 #qa{
@@ -276,10 +276,12 @@ body{
         padding: 15px;
         border-radius: 5px;
         width: 100%;
+        justify-content: space-between;
     }
 
     .tab-content-US3.active {
-        display: block;
+        display: flex;
+        flex-direction: row;
     }
 
 .content-tabs-US3 {
@@ -288,4 +290,151 @@ body{
     width: 95%;
     height: 85%;
     background: linear-gradient(to top, black, white);
+}
+
+.dropdownList-group{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: flex-end;
+    margin: 8px 0;
+}
+
+#left-column{
+    width: 40%;
+    justify-content: flex-end;
+}
+
+.dropdownList{
+    width: 50%;
+}
+
+.text-input-US3{
+    width: 50%;
+}
+
+.label-US3{
+    color: rgb(248, 248, 248);
+    width: fit-content;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 5px 2%;
+}
+
+.input-US3{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: flex-end;
+    margin: 8px 0;
+}
+
+#right-column{
+    width:55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#description-group{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#desc-label{
+    color:black;
+    width: fit-content;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 5px 2%;
+    height: fit-content;
+}
+
+#description{
+    width: 90%;
+    text-align: left;   
+    vertical-align: top;
+}
+
+.footer-btns-US3{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-US3{
+    width: 13vw;
+    height: 50px;
+    background: linear-gradient(to bottom, black, white);
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+    font-weight: bold;
+    border: rgb(146, 145, 145);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px; 
+}
+
+.part{
+    width: 49%;
+}
+
+#all-comments{
+    height: 95%;
+    width: 85%;
+}
+
+#comment-group{
+    display: flex;
+    flex-direction: row;
+    height: 85%;
+    width: 100%;
+}
+
+.part{
+    display: flex;
+    flex-direction: row;
+}
+
+#comment-input{
+    width: 95%;
+    height: 95%;
+    text-align: left;    
+    vertical-align: top;
+}
+
+#left-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.US5-field{
+    width: 50%;
+    height: 36px;
+}
+
+#US5-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.US5-part{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 30px;
+}
+.footer-btns-US3{
+    justify-content: space-evenly;
+    width: 100%;
 }
