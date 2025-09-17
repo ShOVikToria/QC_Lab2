@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Елементи UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>    
+    <div class="tabs">
+        <button class="tab-btn " data-tab="US1">US1</button>
+        <button class="tab-btn active" data-tab="US3">US3</button>
+        <button class="tab-btn" data-tab="US5">US5</button>
+    </div>
+    <div class="tab-content" id="US1">
+        <div class="window"> 
+            <div class="top-panel">
+                <p id="title">Login to Bug Tracker</p>
+                <button class="close">&#x2716;</button>
+            </div>
+            <div class="content">
+                <div class="content-center">
+                    <div class="text-name">
+                        <p id="name">Bug Tracker</p>
+                        <p id="text">powered by QA Start Up</p>
+                    </div>
+                    <div id="inputs">
+                        <div class="text-input">
+                            <p class="label">User Name:</p>
+                            <input type="text" id="username" placeholder="username">
+                        </div>
+                        <div class="text-input">
+                            <p class="label">Password:</p>
+                            <input type="text" id="password" placeholder="password">
+                        </div>
+                    </div>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="checkbox">
+                    <label class="label">Keep me signed in</label><br>
+                </div>
+                <div class="footer">
+                    <div class="footer-text">
+                        <p id="qa">QA.</p>
+                        <p id="start-up">START UP</p>
+                    </div>
+                    <div class="footer-btns">
+                        <button class="btn">Login</button>
+                        <button class="btn">Cancel</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="tab-content active" id="US3">
+        <div class="window"> 
+            <div class="top-panel">
+                <p id="title">Create Report</p>
+                <button class="close">&#x2716;</button>
+            </div>
+            <div class="content" id="content-US3">
+                <div id="header-US3">
+                    <p class="obligatory-fild">*Summary</p>
+                    <input type="text" id="summary">
+                </div>
+                <div class="tabs-US3">
+                    <button class="tab-btn-US3 active" data-tab="Details">Details</button>
+                    <button class="tab-btn-US3" data-tab="Comments">Comments</button>
+                </div>
+                <div class="content-tabs-US3">
+                    <div class="tab-content-US3 active" id="Details">
+                        <div id="left-column">
+                            <div class="dropdownList-group">
+                                <p class="obligatory-fild">*Project</p>
+                                <select id="bgcolor">
+                                    <option value="default" selected></option>
+                                    <option value="Project1">Project1</option>
+                                    <option value="Project2">Project2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content-US3" id="Comments">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content" id="US5">
+        <div class="window"> 
+            <div class="top-panel">
+                <p id="title">Login to Bug Tracker</p>
+                <button class="close">&#x2716;</button>
+            </div>
+            <div class="content">
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
